@@ -1,0 +1,10 @@
+/app/bower_components
+/app/node_modules
+/app/dist/*
+/app/gulpfile.local.js
+/app/app/.idea
+/app/.idea
+/.idea
+/app/npm-debug.log
+/npm-debug.log
+/app/app/npm-debug.log

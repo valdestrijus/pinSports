@@ -1,0 +1,39 @@
+{
+  "name": "PinSports",
+  "author": "Valdas Mazrimas",
+  "version": "0.0.1",
+  "license": "Valdas Mazrimas",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "devDependencies": {
+    "bower": "1.3.x",
+    "browser-sync": "1.6.x",
+    "event-stream": "3.1.x",
+    "gulp": "3.8.x",
+    "del": "0.1.x",
+    "gulp-concat": "2.4.x",
+    "gulp-if": "1.2.x",
+    "gulp-imagemin": "1.2.x",
+    "gulp-jshint": "1.8.x",
+    "gulp-less": "1.3.x",
+    "gulp-minify-css": "0.3.x",
+    "gulp-minify-html": "0.1.x",
+    "gulp-ng-html2js": "0.1.x",
+    "gulp-ng-annotate": "0.3.x",
+    "gulp-preprocess": "1.1.x",
+    "gulp-rename": "1.2.x",
+    "gulp-uglify": "1.0.x",
+    "gulp-util": "3.0.x",
+    "node.extend": "1.1.x",
+    "path": "0.4.x",
+    "streamqueue": "0.1.x",
+    "yargs": "1.3.x"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "build": "gulp",
+    "build-dev": "gulp --dev"
+  }
+
+}

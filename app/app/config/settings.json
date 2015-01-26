@@ -1,0 +1,17 @@
+{
+    "app": {
+        "year": "2015",
+        "version": "0.0.1",
+        "langs": {
+            "available": ["en"],
+            "default": "en"
+        },
+        "url": {
+            "home": "/home",
+            "authRedirect": "/dashboard"
+        }
+    },
+    "api": {
+        "posts": "http://private-3ca132-valdasm.apiary-mock.com/posts"
+    }
+}
