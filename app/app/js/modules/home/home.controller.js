@@ -6,12 +6,19 @@
      * @description Responsible for user dashboard display
      */
         // @ngInject
-    function HomeCtrl(HomeService) {
+    function HomeCtrl(HomeService, ngDialog) {
         var vm = this;
 
         vm.data = HomeService.data;
 
-        console.log(vm.data);
+        vm.openPost = function (item) {
+            ngDialog.open({
+                template: 'modules/home/post/_index.html',
+                className: 'ngdialog-theme-default',
+                controller: 'PostCtrl',
+                data: item
+            });
+        };
     }
 
     angular

@@ -28,6 +28,7 @@
          * Reusable cross app code modules
          */
         'home',
+        'ngDialog',
         'dashboard',
         'templates',
         /*

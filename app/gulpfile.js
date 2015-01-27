@@ -88,7 +88,8 @@ var css = {
                 'bower_components/angular-route/angular-route.min.js',
                 'bower_components/angular-sanitize/angular-sanitize.min.js',
                 'bower_components/angular-translate/angular-translate.min.js',
-                'bower_components/angular-animate/angular-animate.min.js'
+                'bower_components/angular-animate/angular-animate.min.js',
+                'bower_components/ngDialog/js/ngDialog.js'
             ],
             modules: ['app/js/**/*.module.js'],
             app: ['app/js/**/*.js', '!app/js/**/*.module.js'],

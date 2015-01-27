@@ -1,0 +1,11 @@
+<div>
+    <img src="{{item.url}}" title="{{item.title}}" data-ng-style="{'width': item.width}">
+    <h2>{{item.title}}</h2>
+    <hr>
+    <p data-ng-if="item.text">
+        {{item.text}}
+    </p>
+    <hr>
+    <button class="btn btn-default" data-ng-click="prev(item.id)">Previous</button>
+    <button class="btn btn-success" data-ng-click="next(item.id)">Next</button>
+</div>

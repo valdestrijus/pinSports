@@ -8,7 +8,7 @@
 
 * [Node.js](http://nodejs.org/download/). Node.js comes with a package manager called [npm](http://npmjs.org) for installing NodeJS applications and libraries.
 
-* Copy "app/gulpfile.local.sample.js" to "app/gulpfile.local.js". In "app/gulpfile.local.js" file change "'/webroot/'" to your own webroot e.g. '/selfcare.ortelmobile.be/'.
+* Copy `app/gulpfile.local.sample.js` to `app/gulpfile.local.js`. In `app/gulpfile.local.js` file change `/webroot/` to your own webroot e.g. `/selfcare.ortelmobile.be/`.
 
 * Install local dependencies (the dependencies declared in the package.json file):
 
@@ -22,14 +22,14 @@
 
 ### Building
 
-* Production:
+* Production (minified):
 
     ```
     npm run build
     ```
 
 
-* Development:
+* Development (not minified):
 
     ```
     npm run build-dev
