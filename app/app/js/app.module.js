@@ -27,6 +27,8 @@
         /*
          * Reusable cross app code modules
          */
+        'event',
+        'security',
         'home',
         'ngDialog',
         'dashboard',

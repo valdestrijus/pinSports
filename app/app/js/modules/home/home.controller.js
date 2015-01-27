@@ -10,6 +10,7 @@
         var vm = this;
 
         vm.data = HomeService.data;
+        vm.featured = HomeService.featuredItem;
 
         vm.openPost = function (item) {
             ngDialog.open({
@@ -19,6 +20,7 @@
                 data: item
             });
         };
+
     }
 
     angular

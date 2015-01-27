@@ -13,5 +13,21 @@
     },
     "api": {
         "posts": "http://private-3ca132-valdasm.apiary-mock.com/posts"
-    }
+    },
+    "primary_navigation": [
+        {
+            "title" : "moterims",
+            "href" : "moterims",
+            "permissions": "moterims_view"
+        },
+        {
+            "title" : "vyrams",
+            "href" : "vyrams",
+            "permissions": "vyrams_view"
+        }, {
+            "title" : "unversalus_sportas",
+            "href" : "unversalus-sportas",
+            "permissions": "universal_sportas_view"
+        }
+    ]
 }

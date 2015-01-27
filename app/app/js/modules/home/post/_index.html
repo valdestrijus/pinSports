@@ -1,5 +1,7 @@
 <div>
-    <img src="{{item.url}}" title="{{item.title}}" data-ng-style="{'width': item.width}">
+    <div class="image-wrapper">
+        <img data-ng-src="{{item.url}}" title="{{item.title}}" data-ng-style="{'width': item.width}">
+    </div>
     <h2>{{item.title}}</h2>
     <hr>
     <p data-ng-if="item.text">

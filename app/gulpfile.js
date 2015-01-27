@@ -139,7 +139,7 @@ gulp.task('clean', function (cb) {
 
 // Build Less first time
 gulp.task('less', function () {
-    return gulp.src([css.source, css.cssSource])
+    return gulp.src([css.cssSource, css.source])
         .pipe(less())
         .pipe(concat(css.filename))
         .pipe(gulpif(options.env.prod, rename(options.rename)))
@@ -149,8 +149,9 @@ gulp.task('less', function () {
 
 // Build Less Sources by watch (for dev)
 gulp.task('lessSources', function () {
-    return gulp.src(css.source)
+    return gulp.src([css.cssSource, css.source])
         .pipe(less())
+        .pipe(concat(css.filename))
         .pipe(rename(css.filename))
         .pipe(gulp.dest(css.output));
 });

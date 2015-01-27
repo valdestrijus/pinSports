@@ -1,14 +1,37 @@
 <div class="col-md-12 col-sm-12 col-xs-12">
-    <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-ng-repeat="item in home.data.posts">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <div class="panel-content" data-ng-click="home.openPost(item)">
-                        <img src="{{item.url}}" alt="" title="{{item.title}}"/>
-                        <hr>
-                        <h2>
-                            {{item.title}}
-                        </h2>
+    <div class="col-md-12">
+        <div class="row">
+            <div class="post no-touch col-lg-6 col-md-8 col-sm-6 col-xs-12" data-ng-repeat="item in home.data.posts | filter: { size: 4 } ">
+                <div class="post-image post-image-size-{{item.size}}">
+                    <div data-ng-click="home.openPost(item)">
+                        <div class="post-visualization no-touch">
+                            <img data-ng-src="{{item.url}}" alt="" title="{{item.title}}"/>
+                        </div>
+                        <div class="post-info">
+                            <h3> {{item.title}} </h3>
+                            <span data-ng-if="item.info"> {{item.info}} </span>
+                        </div>
+                        <div class="post-share">
+                            share icons
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post no-touch col-lg-3 col-md-4 col-sm-6 col-xs-12" data-ng-repeat="item in home.data.posts | filter: { size: '!' + 4 } ">
+                <div class="post-image post-image-size-{{item.size}}">
+                    <div>
+                        <div data-ng-click="home.openPost(item)">
+                            <div class="post-visualization no-touch">
+                                <img data-ng-src="{{item.url}}" alt="" title="{{item.title}}"/>
+                            </div>
+                            <div class="post-info">
+                                <h3> {{item.title}} </h3>
+                                <span data-ng-if="item.info"> {{item.info}} </span>
+                            </div>
+                            <div class="post-share">
+                                share icons
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
